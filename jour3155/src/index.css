@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+.text-outline-black-2 {
+  text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000,
+    2px 2px 0 #000000;
+}
+
+.text-outline-black-3 {
+  text-shadow: -3px -3px 0 #000000, 3px -3px 0 #000000, -3px 3px 0 #000000,
+    3px 3px 0 #000000;
+}
+
 .text-outline-white-2 {
   text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff,
     2px 2px 0 #ffffff;
@@ -10,4 +36,25 @@
 .text-outline-white-3 {
   text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff,
     3px 3px 0 #ffffff;
+}
+
+.contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  min-width: 100%;
+}
+
+.scale-down {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  min-width: 100%;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 100%;
 }
