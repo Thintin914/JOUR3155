@@ -64,9 +64,10 @@ function App() {
 
       </div>
 
-      <Sector1 width={screenWidth} height={20} top={-75} scrollY={scrollY} title='Published By' contents={[ 'Fanny', 'Joyce', 'Jacky', 'Vincent', 'at 7 Nov, 2023']} />
+      <Sector1 width={screenWidth} height={20} top={-75} scrollY={scrollY} title='Published By' contents={[ 'Fanny', 'Joyce', 'Jacky', 'Vincent']} />
 
-      <div className=' flex flex-col justify-start items-start ml-16 mr-60 gap-8 text-2xl font-thin text-justify'>
+      <div className=' flex flex-col justify-start items-start ml-16 mr-16 md:mr-60 gap-8 text-2xl font-thin text-justify'>
+        <p className='text-[#87919c]'>7 Nov, 2023</p>
         <p className=' font-bold text-5xl'>Introduction</p>
         <p>The Top Talent Pass Scheme (TTPS), aiming to attract the world's top talents with working experience, high salaries, and high academic qualifications to Hong Kong, has sparked a debate over its effectiveness since the launch of the first batch of applications on Dec. 28, 2022.</p>
         <p>The Director of iN and iN Management Limited William Wong, is positive that talents could fill up the manpower shortage faced in specific industries in Hong Kong.</p>
