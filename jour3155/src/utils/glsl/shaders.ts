@@ -358,14 +358,14 @@ uniform vec2 resolution;
 uniform float time;
 uniform vec2 mouse;
 
-#define DOTSIZE 0.5
+#define DOTSIZE 0.3
 #define D2R(d) radians(d)
 #define MIN_S 1.5
 #define MAX_S 1.8
 #define SPEED 0.01
 
-#define SST 0.188
-#define SSQ 0.08
+#define SST 0.288
+#define SSQ 0.18
 
 #define ORIGIN (0.5 * resolution.xy)
 float R;
