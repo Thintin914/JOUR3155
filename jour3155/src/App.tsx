@@ -3,6 +3,7 @@ import { CanvasBlock } from './utils/glsl/CanvasBlock';
 import { createFaintLightShader } from './utils/glsl/faintLightShader';
 import { motion } from 'framer-motion';
 import { Sector1 } from './Sector1';
+import { createHalfToneShader } from './utils/glsl/halfToneShader';
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
   const [scrollY, setScrollY] = useState<number>(0);
 
   useEffect(() =>{
+
+    createHalfToneShader('gl1', 0.005);
 
     const onresize = () =>{
       setScreenWidth(window.innerWidth);
@@ -40,7 +43,22 @@ function App() {
   }, [])
 
   return (
-    <div className=' w-full h-fit overflow-clip font-serif text-[#282b2e]'>
+    <div className=' relative w-full h-fit overflow-clip font-serif text-[#282b2e]'>
+
+      <div className=' fixed w-full h-screen -z-40'>
+        <CanvasBlock id='gl1' canvasH={1000} canvasW={1000} />
+      </div>
+
+      <div className=' fixed w-full h-screen -z-40 select-none pointer-events-none'>
+        <div className=' absolute w-20 h-20 rounded-full border-2 border-[#404040]'
+          style={{
+            top: `${mousePos.y - 40}px`,
+            left: `${mousePos.x - 40}px`
+          }}>
+
+        </div>
+      </div>
+
       <div className=' relative w-full h-[130vh] flex flex-col justify-center items-center font-sans'>
 
         <div className="bg-fixed w-full h-full bg-cover absolute opacity-40 -z-50"
@@ -67,6 +85,7 @@ function App() {
       <Sector1 width={screenWidth} height={20} top={-75} scrollY={scrollY} title='Published By' contents={[ 'Fanny', 'Joyce', 'Jacky', 'Vincent']} />
 
       <div className=' flex flex-col justify-start items-start ml-16 mr-16 md:mr-60 gap-8 text-2xl font-thin text-justify'>
+
         <p className='text-[#87919c]'>7 Nov, 2023</p>
         <p className=' font-bold text-5xl'>Introduction</p>
         <p>The Top Talent Pass Scheme (TTPS), aiming to attract the world's top talents with working experience, high salaries, and high academic qualifications to Hong Kong, has sparked a debate over its effectiveness since the launch of the first batch of applications on Dec. 28, 2022.</p>

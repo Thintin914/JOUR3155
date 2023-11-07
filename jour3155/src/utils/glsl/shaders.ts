@@ -349,3 +349,101 @@ void main(){
 
 }
 `;
+
+export const halfToneFragShader = `
+precision lowp float;
+
+uniform float scale;
+uniform vec2 resolution;
+uniform float time;
+uniform vec2 mouse;
+
+#define DOTSIZE 0.5
+#define D2R(d) radians(d)
+#define MIN_S 1.5
+#define MAX_S 1.8
+#define SPEED 0.01
+
+#define SST 0.188
+#define SSQ 0.08
+
+#define ORIGIN (0.5 * resolution.xy)
+float R;
+float S;
+
+vec4 rgb2cmyki(vec3 c)
+{
+	float k = max(max(c.r, c.g), c.b);
+	return min(vec4(c.rgb / k, k), 1.0);
+}
+
+vec3 cmyki2rgb(vec4 c)
+{
+	return c.rgb * c.a;
+}
+
+vec2 px2uv(vec2 px)
+{
+	return vec2(px / resolution.xy);
+}
+
+vec2 grid(vec2 px)
+{
+	return px - mod(px,S);
+}
+
+vec4 ss(vec4 v)
+{
+	return smoothstep(SST-SSQ, SST+SSQ, v);
+}
+
+vec4 halftone(vec2 fc, mat2 m)
+{
+	vec2 smp = (grid(m*fc) + 0.5*S) * m;
+	float s = min(length(fc-smp) / (DOTSIZE*0.5*S), 1.0);
+    vec3 texc = vec3(0.0);
+    texc = pow(texc, vec3(2.2)); // Gamma decode.
+	vec4 c = rgb2cmyki(texc);
+	return c+s;
+}
+
+mat2 rotm(float r)
+{
+	float cr = cos(r);
+	float sr = sin(r);
+	return mat2(
+		cr,-sr,
+		sr,cr
+	);
+}
+
+void main()
+{
+    R = SPEED*0.333*time;
+    S = MIN_S + (MAX_S-MIN_S) * (0.5 - 0.5*cos(SPEED*time));
+
+	vec2 fc = gl_FragCoord.xy - ORIGIN;
+	
+	mat2 mc = rotm(R + D2R(15.0));
+	mat2 mm = rotm(R + D2R(75.0));
+	mat2 my = rotm(R);
+	mat2 mk = rotm(R + D2R(10.0));
+	
+	float k = halftone(fc, mk).a;
+	vec3 c = cmyki2rgb(ss(vec4(
+		halftone(fc, mc).r,
+		halftone(fc, mm).g,
+		halftone(fc, my).b,
+		halftone(fc, mk).a
+	)));
+    
+  c = pow(c, vec3(1.0/5.2)); // Gamma encode.
+  float a = 1.0;
+  if (c.r == 1.0 || c.g == 1.0 || c.b == 1.0){
+    c = c * -1.0;
+    a = 0.0;
+  }
+	gl_FragColor = vec4(c, a);
+
+}
+`;
