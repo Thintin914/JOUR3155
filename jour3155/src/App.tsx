@@ -45,7 +45,7 @@ function App() {
   return (
     <div className=' relative w-full h-fit overflow-clip font-serif text-[#282b2e]'>
 
-      <div className=' fixed w-full h-screen -z-40'>
+      <div className=' absolute w-full h-[150vh] -z-40'>
         <CanvasBlock id='gl1' canvasH={1000} canvasW={1000} />
       </div>
 
