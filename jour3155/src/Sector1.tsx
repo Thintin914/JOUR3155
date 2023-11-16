@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 
 
-export function Sector1(props: {width: number, height: number, top: number, scrollY: number, title: string, contents: string[]}){
+export function Sector1(props: {width: number, height: number, top: number, scrollY: number, title: string, contents: string[], scrollRate: number}){
 
     return (
         <div className=' relative w-full flex justify-center items-center font-sans'
@@ -22,7 +22,7 @@ export function Sector1(props: {width: number, height: number, top: number, scro
                 </p>
                 <div className=" w-fit h-full flex justify-start items-start md:pl-28 pl-16 md:text-5xl text-2xl gap-5 overflow-clip relative"
                     style={{
-                        left: `${props.scrollY / 5}px`
+                        left: `${props.scrollY / props.scrollRate}px`
                     }}>
                 {
                     props.contents.map((item, index) =>{

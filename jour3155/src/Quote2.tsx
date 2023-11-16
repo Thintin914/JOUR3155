@@ -30,15 +30,15 @@ export function Quote2(props: {mouseY: number, text: string, photo: string, font
     return (
         <div className=' relative w-full h-fit '>
 
-            <motion.div ref={photoScope} className=' fixed w-[150px] h-[150px] rounded-full right-[25px]'
-                initial={{opacity: 0, x: 20}}
-                style={{
-                top: `${props.mouseY - 75}px`,
-                }}>
-                <img src={props.photo} className=' contain rounded-full' />
-            </motion.div>
+          <motion.div ref={photoScope} className=' fixed w-[150px] h-[150px] rounded-full right-[25px]'
+              initial={{opacity: 0, x: 20}}
+              style={{
+              top: `${props.mouseY - 75}px`,
+              }}>
+              <img src={props.photo} className=' contain rounded-full' />
+          </motion.div>
 
-          <p className=' italic text-[#606060]'
+          <p className=' italic text-[#606060] font-semibold'
           style={{
             fontSize: `${props.fontSize}px`,
             lineHeight: '1.8rem'
