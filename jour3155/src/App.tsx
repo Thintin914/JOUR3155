@@ -48,6 +48,10 @@ function App() {
         <CanvasBlock id='gl1' canvasH={1000} canvasW={1000} />
       </div>
 
+      <div className=' fixed right-0 -z-50'>
+        <img src='./images/ink.png' className=' contain' />
+      </div>
+
       <div className=' relative w-full h-[50vh] flex flex-col justify-center items-center font-sans'>
 
         <div className="bg-fixed w-full h-full bg-cover absolute opacity-40 -z-50"
