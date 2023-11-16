@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { CanvasBlock } from './utils/glsl/CanvasBlock';
-import { createFaintLightShader } from './utils/glsl/faintLightShader';
-import { motion, useAnimate } from 'framer-motion';
 import { Sector1 } from './Sector1';
 import { createHalfToneShader } from './utils/glsl/halfToneShader';
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { Quote } from './Quote';
 import { Quote2 } from './Quote2';
-import { createDistortionShader } from './utils/glsl/distortionShader';
 
 function App() {
 
@@ -18,7 +14,6 @@ function App() {
   useEffect(() =>{
 
     createHalfToneShader('gl1', 0.005);
-    createDistortionShader('gl2', ['./images/black-wave-bg.jpeg'], 0.01)
     const onresize = () =>{
       setScreenWidth(window.innerWidth);
     };
@@ -78,7 +73,7 @@ function App() {
 
       <Sector1 width={screenWidth} height={20} top={-75} scrollRate={5} scrollY={scrollY} title='Published By' contents={[ 'Fanny', 'Joyce', 'Jacky', 'Vincent']} />
 
-      <div className=' flex flex-col justify-start items-start ml-16 mr-16 md:mr-60 gap-8 text-2xl font-thin text-justify'
+      <div className=' flex flex-col justify-start items-start ml-12 mr-12 md:mr-[300px] gap-8 text-2xl font-thin'
         style={{
           lineHeight: '2.5rem'
         }}>
@@ -86,11 +81,13 @@ function App() {
         <p className='text-[#87919c]'>7 Nov, 2023</p>
         <p className=' font-bold text-3xl'>Stakeholders</p>
       
-        <div className=' relative w-full h-fit flex justify-start items-center text-xl gap-5 flex-wrap mb-10 text-white pt-2 pb-2 rounded-tl-md rounded-tr-md'>
+        <div className=' relative w-full h-fit flex justify-start items-center text-xl gap-5 flex-wrap mb-10 text-black pt-2 pb-20 rounded-tl-md rounded-tr-md'>
 
-          <div className=' absolute w-full h-full -z-50'>
-            <CanvasBlock id='gl2' canvasW={100} canvasH={30} />
-          </div>
+          <div className="bg-fixed w-full h-full bg-cover absolute grayscale opacity-30 -z-50"
+            style={{
+              backgroundImage: 'url(./images/rusty.png)'
+            }}
+          />
 
           <div className=' flex justify-start items-center gap-2'>
             <div className='w-12 h-12'>
