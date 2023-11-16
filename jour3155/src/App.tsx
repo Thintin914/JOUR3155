@@ -48,7 +48,10 @@ function App() {
         <CanvasBlock id='gl1' canvasH={1000} canvasW={1000} />
       </div>
 
-      <div className=' fixed right-0 -z-50'>
+      <div className=' fixed right-0 -z-50'
+        style={{
+          display: screenWidth < 768 ? 'none' : 'block'
+        }}>
         <img src='./images/ink.png' className=' contain' />
       </div>
 
