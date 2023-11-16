@@ -9,11 +9,11 @@ export function Quote(props: {screenWidth: number, mouseY: number, text: string,
     const [isActive, setPhoto] = useState<boolean>(false);
     const [photoScope, photoAnimate] = useAnimate();
     async function photoFadeIn(){
-      photoAnimate(photoScope.current, {boxShadow: '10px 50px 15px rgba(245, 217, 94, 0.8)'}, {duration: 2})
+      photoAnimate(photoScope.current, {boxShadow: '10px 60px 10px rgba(238, 243, 243, 0.8)'}, {duration: 2})
       await photoAnimate(photoScope.current, {opacity: 1, x: -20}, {ease: 'easeInOut', duration: 0.5});
     }
     async function photoFadeOut(){
-      await photoAnimate(photoScope.current, {opacity: 0, x: 20, boxShadow: '0px 0px 0px rgba(245, 217, 94, 0)'}, {ease: 'easeInOut', duration: 0.5});
+      await photoAnimate(photoScope.current, {opacity: 0, x: 20, boxShadow: '0px 0px 0px rgba(238, 243, 243, 0)'}, {ease: 'easeInOut', duration: 0.5});
     }
     useEffect(() =>{
         if (!photoScope.current)
@@ -41,6 +41,7 @@ export function Quote(props: {screenWidth: number, mouseY: number, text: string,
               top: `${props.mouseY - 75}px`,
               }}>
               <img src={props.photo} className=' contain rounded-full' />
+              <img src={props.photo} className=' absolute -z-40 -bottom-[200px] -right-8 grayscale contain rounded-full shadow-lg shadow-gray-400' />
           </motion.div>
 
           <FaQuoteLeft className=' absolute left-0 top-0 animate-pulse'/>
