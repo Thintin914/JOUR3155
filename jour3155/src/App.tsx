@@ -134,7 +134,7 @@ function App() {
 
         <p>The Hong Kong government opened the applications for the Top Talent Pass Scheme (SPSS) in December 2022, William Wong, the director of iN and iN Management Limited, expected that the programme would be able to relax the talent shortage in the IT industry, whilst the result has not been as he expected.</p>
         <p>Wong’s company has seen a rise of about 10% in the number of applicants in the past six months most of whom are mainlanders who came to Hong Kong through the TPPS.</p>
-        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/wong.png' name='said Wong.' fontSize={48}
+        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/wong.png' name='said Wong.' fontSize={48} title='IT Company Director'
           text="We do get a lot of applications from people who have TTPS visas, and we have hired a lot of them, but they don't stay in their jobs or Hong Kong for long," />
         <p>Wong believed the company was now competitive enough to take on more commercial projects by hiring non-local talents, but the effectiveness of bridging the talent gap, in the long run, had yet to be ascertained. </p>
         <p>The Legislative Council member, Kong Yuk-foon, stated the decision of TTPS applicants to stay in Hong Kong or not would affect the effectiveness of the programme and local employment, and the government should review whether the number of people coming to work in Hong Kong and their occupations could meet the Government's expectation after the programme had been implemented for one to two years.</p>
@@ -145,7 +145,12 @@ function App() {
           style={{
             lineHeight: '2.0rem'
           }}>
-          <div className="bg-fixed w-full h-full bg-cover opacity-70 absolute -z-50"
+          <div className="bg-fixed w-full h-full bg-contain bg-center opacity-70 absolute -z-50"
+            style={{
+              backgroundImage: 'url(./images/ink.png)'
+            }}
+          />
+          <div className="bg-fixed w-full h-full bg-cover bg-center opacity-30 absolute -z-40"
             style={{
               backgroundImage: 'url(./images/black-newspaper.png)'
             }}
@@ -162,7 +167,7 @@ function App() {
         <p>After the launch of TTPS last year, the labor force edged up 1.7% that returned to 3.83 million as of September 2023, according to the Census and Statistics Department.</p>
         <p>As the programme has no mandatory requirement for applicants to work in Hong Kong, some applicants admitted that they had no intention to come to Hong Kong recently as they applied for TTPS just to "give it a try" and leave more options for their future career development.</p>
         <p>Zheng Jia, 24, a fresh graduate of Monash University, applied for TTPS Category C and received her notification of approval in early June this year.</p>
-        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/Zheng.png' name='said Zheng.' fontSize={30}
+        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/Zheng.png' name='said Zheng.' fontSize={30} title='Monash University Fresh Graduate'
           text="The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme, uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong. However, TTPS only requires a degree from a top 100 university," />
 
         <div className=' w-full h-[70vh] mb-10 flex flex-col justify-center items-center'>
@@ -180,7 +185,7 @@ function App() {
         <p>As the economic downturn in mainland China, Category C applicants are mostly fresh graduates with less working experience who favor Hong Kong as a city with stable economic development and a broader platform for job search.</p>
         <p>Zeng stated the financial industry is currently under suppression in mainland China, and coupled with the deterioration of the China economy, she sees Hong Kong with more job opportunities, which pushed her to apply to TTPS.</p>
         <p>Li also believed that Hong Kong's financial industry still enjoys an edge, which encouraged some of her classmates majoring in finance to apply for TPPS to enter Hong Kong and seek job opportunities.</p>
-        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/Zheng.png' name='said Lei.' fontSize={30}
+        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/Zheng.png' name='said Lei.' fontSize={30} title='TTPS Category C applicant'
           text="Besides more job opportunities, there is more room for business development in Hong Kong, and the lower tax rate helps start a company as I want to establish my studio in Hong Kong as well," />
         <p>Under the low tax rate practice in Hong Kong, corporations with annual profits not exceeding HK$2 million are required to pay profits tax at 8.25%, while those with annual profits exceeding HK$2 million are required to pay profits tax at 16.5%.</p>
         <p>Applicants’ legal spouses and unmarried dependent children under 18 are allowed to enter Hong Kong under TTPS, some of the applicants in Category A and B that she knew, value the Hong Kong education system, which planned to bring their children to study here, Lei added.</p>
@@ -191,7 +196,7 @@ function App() {
           text="“The cost of living in Hong Kong is much higher than in mainland China. If the government does not have relevant policies to support talents coming to Hong Kong, likely, they will eventually return to mainland China after years,” added Zeng." />
         <p>Zeng suggested the government could set up employment support services for talents coming to Hong Kong through TTPS, such as cooperating with enterprises to provide employment opportunities, while Lei agreed if the government introduce preferential treatment to foreign investors to set up a business in Hong Kong would be attractive to potential talents.</p>
         <p>Given the limited social resources and unclear effectiveness of the TTPS, it is not appropriate for the government to introduce complementary measures and benefits to attract more applicants at this stage, said Kong.</p>
-        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/Kong.png' name='added Kong.' fontSize={36}
+        <Quote screenWidth={screenWidth} mouseY={mousePos.y} photo='./images/Kong.png' name='added Kong.' fontSize={36} title='Legislative Council Member'
           text="Applicants for the TTPS should not only think about the welfare of Hong Kong as they have high academic qualifications and rich working experience, which means they should have the ability to live in Hong Kong," />
         <p>Focusing on the difficulties encountered by TTPS applicants in finding jobs, Kong suggested that the government examine whether talents of certain job types and occupations are unsuitable for importation into Hong Kong in the future policy review, to better meet the demand of the local labour market. </p>
         <p>After a year the announcement of TTPS, the government released to expand the university network under TTPS by adding eight top-notch institutions to 184 institutions in total, including five overseas world-tier hospitality and leisure management universities or schools and three universities in mainland China that are listed in Project 985, which effect from this month in Policy Address 2023.</p>
@@ -199,11 +204,10 @@ function App() {
         <p>Kong reiterated the programme did not cater to Mainlanders only but was comprehensively geared towards global talents.</p>
         <Quote2 mouseY={mousePos.y} fontSize={24} photo='./images/Kong.png'
           text="“With foreign chambers of commerce re-launching their local operations, we expect to see more young, educated, and experienced applicants from all over the world for our programme in the coming years,” added Kong." />
-      </div>
-
-      <div className=' w-full h-[70vh] mt-10 flex flex-col justify-center items-center'>
-        <img src='./images/TTPSChart.png' className=' contain' />
-        <p className=' text-lg text-center'>Hong Kong's labour force edges up 1.7% in the third quarter of 2023 compared with the first quarter of 2022, which the first quarter after the introduction of TTPS application.</p>
+        <div className=' w-full h-[70vh] mt-10 flex flex-col justify-center items-center'>
+          <img src='./images/TTPSChart.png' className=' contain' />
+          <p className=' text-lg text-center'>Hong Kong's labour force edges up 1.7% in the third quarter of 2023 compared with the first quarter of 2022, which the first quarter after the introduction of TTPS application.</p>
+        </div>
       </div>
 
       <div className=' mb-[200px]' />

@@ -4,7 +4,7 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 
 
-export function Quote(props: {screenWidth: number, mouseY: number, text: string, name: string, photo: string, fontSize: number}){
+export function Quote(props: {screenWidth: number, mouseY: number, text: string, name: string, photo: string, fontSize: number, title?: string}){
 
     const [isActive, setPhoto] = useState<boolean>(false);
     const [photoScope, photoAnimate] = useAnimate();
@@ -40,8 +40,11 @@ export function Quote(props: {screenWidth: number, mouseY: number, text: string,
               style={{
               top: `${props.mouseY - 75}px`,
               }}>
+            <div className="fixed bottom-[-120px] text-white text-3xl italic">
+              <p>{props.title ? props.title : ''}</p>
+            </div>
               <img src={props.photo} className=' contain rounded-full' />
-              <img src={props.photo} className=' absolute -z-40 -bottom-[200px] -right-8 grayscale contain rounded-full shadow-lg shadow-gray-400' />
+              <img src={props.photo} className=' absolute -z-40 -bottom-[200px] opacity-40 -right-8 grayscale contain rounded-full shadow-lg shadow-gray-400' />
           </motion.div>
 
           <FaQuoteLeft className=' absolute left-0 top-0 animate-pulse'/>
