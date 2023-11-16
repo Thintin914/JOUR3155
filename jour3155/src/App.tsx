@@ -101,7 +101,7 @@ function App() {
 
           <div className=' flex justify-start items-center gap-2'>
             <div className='w-12 h-12'>
-              <img src='./images/Wong.png' className=' contain rounded-full' />
+              <img src='./images/wong.png' className=' contain rounded-full' />
             </div>
             <p>William Wong, IT company director</p>
           </div>
