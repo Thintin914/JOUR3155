@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -98,27 +99,60 @@ const data = [
   },
 ];
 
+const DataFormater = (number: number) => {
+  if(number > 1000000000){
+    return (number/1000000000).toString() + 'B';
+  }else if(number > 1000000){
+    return (number/1000000).toString() + 'M';
+  }else if(number > 1000){
+    return (number/1000).toString() + 'K';
+  }else{
+    return number.toString();
+  }
+}
+
+export const CustomizedAxisTick: FunctionComponent<any> = (props: any) => {
+  const { x, y, payload } = props;
+
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text
+        x={0}
+        y={0}
+        dy={16}
+        textAnchor="end"
+        fill="#666"
+        transform="rotate(-35)"
+        fontSize={20}
+      >
+        {payload.value}
+      </text>
+    </g>
+  );
+};
+
 export function LabourForce(props: {width: number}) {
 
   return (
     <BarChart
-      width={props.width}
-      height={500}
-      data={data}
-      margin={{
-        top: 20,
-        right: 30,
-        left: 20,
-        bottom: 5
-      }}
+    width={props.width}
+    height={600}
+    barCategoryGap={props.width > 768 ? 10 : 18}
+    data={data}
+    margin={{
+      top: 10,
+      right: 0,
+      left: 20,
+      bottom: 0
+    }}
     >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis type="number" domain={[0, 2000000]} />
+      <CartesianGrid strokeDasharray="3 3"  />
+      <XAxis dataKey="name" tick={<CustomizedAxisTick />} interval={props.width > 768 ? 0 : 1}/>
+      <YAxis type='number' domain={[0, 2200000]} tickCount={10} interval={1} fontSize={20} tickFormatter={DataFormater}  />
       <Tooltip />
-      <Legend />
-      <Bar dataKey="Female" stackId="a" fill="#EC81C8" />
-      <Bar dataKey="Male" stackId="a" fill="#81DFEC" />
+      <Legend wrapperStyle={{paddingTop: 25}}/>
+      <Bar dataKey="Male" fill="#7A87D4"/>
+      <Bar dataKey="Female" fill="#D47ABB" />
     </BarChart>
   );
 }

@@ -7,6 +7,8 @@ import { Quote2 } from './Quote2';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { LabourForce } from './LabourForceChart';
+import { TTPSPieChart } from './TTPSPieChart';
+import TTPSCountryCaseChart from './TTPSCountryCaseChart';
 
 function App() {
 
@@ -103,52 +105,103 @@ function App() {
         <p>Wong believed the company was now competitive enough to take on more commercial projects by hiring non-local talents, but the effectiveness of bridging the talent gap, in the long run, had yet to be ascertained. </p>
         <p>The Legislative Council member, Kong Yuk-foon, stated the decision of TTPS applicants to stay in Hong Kong or not would affect the effectiveness of the programme and local employment, and the government should review whether the number of people coming to work in Hong Kong and their occupations could meet the Government's expectation after the programme had been implemented for one to two years.</p>
         <p>The local labor force has dropped 5.3% from 3.99 million in 2019 to 3.77 million in 2022, hitting a new low since the immigration wave and the COVID-19 pandemic, according to the Census and Statistics Department.</p>
+      
+        <div className='w-full flex justify-center items-center'>
+          <video className='w-full lg:w-1/2 aspect-video' controls>
+            <source src="./images/video.mp4" type="video/mp4"/>
+            our browser does not support the video tag.
+          </video>
+        </div>
+
+        <div className='w-full flex flex-col justify-start items-start bg-slate-50 p-1'>
+          <p className='flex w-full justify-center items-center text-center font-semibold'
+            style={{
+              lineHeight: '1.5rem'
+            }}>
+            2019 Q1 - 2023 Q3 Hong Kong's Labour Force
+          </p>
+          <LabourForce width={screenWidth > 768 ? screenWidth - screenWidth * 0.25 : screenWidth - screenWidth * 0.1} />
+          <p className='text-lg text-center'>Hong Kong's labour force edges up 1.7% in the third quarter of 2023 compared with the first quarter of 2022, which the first quarter after the introduction of TTPS application.</p>
+        </div>
         
-        <LabourForce width={screenWidth > 768 ? screenWidth - screenWidth * 0.3 : screenWidth - screenWidth * 0.1} />
 
         <p>TTPS is a new talent program introduced by the Hong Kong Government in the Policy Address 2022, to attract high-paid and well-qualified world talents to stay in Hong Kong, thereby strengthening the high-end labor force and enhancing competitiveness.</p>
         <p>The government aims to attract high-net-value talents with Category A targets on experienced and high-income employees or entrepreneurs with an annual income reached HK$2.5 million equivalent in the year before application.</p>
         <p>Category B and C applicants are required to hold a bachelor’s degree from the world’s top 100 universities. Category B applicants are required to have at least three years of working experience, while no working experience is required for Category C applicants, but it is subject to a quota limit and is available on a first-come-first-served basis.</p>
         
-        <p>As of MM/YYYY, the number of applicants for the TTPS reached XX, of which XX% were from Mainland China. A total of XX applications were approved, accounting for XX% of the total number of applications under the talent schemes in Hong Kong, according to the Immigration Department.</p>
-        <p>Category A, B, and C applications each accounted for XX%, XX%, and XX% of the approved applications, respectively.</p>
+        <p>As of Oct. 31, 2023, the number of successful applications for the TTPS reached 43,068 out of 54,772 cases, accounting for 37.2% of the total number of all talent schemes’ approvals, with 94.5% of approved applicants from Mainland China. </p>
+        <p>Category A, B, and C applications each accounted for 22.6%, 54.5%, and 22.8% of the approved applications, respectively, according to the Labour and Welfare Bureau. </p>
         <p>The more relaxed eligibility criteria for Category C have attracted many applicants of Chinese nationality who obtained their bachelor’s degree from the world’s top 100 universities with less than three years of work experience.</p>
         <p>After the launch of TTPS last year, the labor force edged up 1.7% that returned to 3.83 million as of September 2023, according to the Census and Statistics Department.</p>
-        <p>As the programme has no mandatory requirement for applicants to work in Hong Kong, some applicants admitted that they had no intention to come to Hong Kong recently as they applied for TTPS just to "give it a try" and leave more options for their future career development.</p>
-        <p className=' font-bold text-3xl'>Stakeholders</p>
-        <div>
-          <Splide
-            options={{
-              perPage: 2,
-              autoplay: true,
-              interval: 2000,
-              type: 'loop',
-              flickPower: 100,
-              perMove: 1,
-              pauseOnFocus: false,
-              pauseOnHover: false
-            }}>
-            <SplideSlide>
-              <img src="./images/Kong.png"/>
-            </SplideSlide>
-            <SplideSlide>
-              <img src="./images/wong.png"/>
-            </SplideSlide>
-            <SplideSlide>
-              <img src="./images/Lei.png"/>
-            </SplideSlide>
-            <SplideSlide>
-              <img src="./images/Zheng.png"/>
-            </SplideSlide>
-          </Splide>
+        
+        <div className=' w-full h-fit flex flex-col lg:flex-row justify-start items-start gap-2'>
+
+          <div className='w-full lg:w-1/2 flex flex-col justify-start items-start bg-slate-50 p-1'>
+            <p className='flex w-full justify-center items-center text-center font-semibold'
+              style={{
+                lineHeight: '1.5rem'
+              }}>
+              TTPS Category Disturbution of Application as of Oct. 12, 2023
+            </p>
+            <TTPSPieChart width={screenWidth > 768 ? screenWidth - screenWidth * 0.12 : screenWidth - screenWidth * 0.05}  />
+            <p className='text-lg text-center min-h-[10vh]'>The number of Category B applicants, graduates from the world’s top 100 university with at least three years of work experience, ranks top among three categories under TTPS.  </p>
+          </div>
+
+          <div className='w-full lg:w-1/2 flex flex-col justify-start items-start bg-slate-50 p-1'>
+            <p className='flex w-full justify-center items-center text-center font-semibold'
+              style={{
+                lineHeight: '1.5rem'
+              }}>
+              TTPS Country Disturbution of Approved Cases as of Oct. 31, 2023
+            </p>
+            <TTPSCountryCaseChart width={screenWidth > 768 ? screenWidth - screenWidth * 0.12 : screenWidth - screenWidth * 0.05}  />
+            <p className='text-lg text-center min-h-[10vh]'>TTPS applicants from China counts for most of the approved cases.</p>
+          </div>
+
         </div>
+        
+
+
+        <p>As the programme has no mandatory requirement for applicants to work in Hong Kong, some applicants admitted that they had no intention to come to Hong Kong recently as they applied for TTPS just to "give it a try" and leave more options for their future career development.</p>
+
+        <div className=' w-full flex justify-center items-center'>
+          <div className='w-full lg:w-[70%] aspect-video'>
+            <Splide
+              options={{
+                perPage: 1,
+                autoplay: true,
+                interval: 4000,
+                type: 'loop',
+                flickPower: 100,
+                perMove: 1,
+                pauseOnFocus: false,
+                pauseOnHover: true,
+                pagination: false
+              }}>
+              <SplideSlide>
+                <div className=' relative w-full flex flex-col justify-start items-start'>
+                  <img src="./images/Zeng.jpg" className=' contain'/>
+                  <p className=' absolute bottom-0 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Zeng Jia, 24, a fresh graduate from Monash University, Australia, is currently working in mainland China. (Picture provided by Zeng Jia)</p>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                <div className=' relative w-full flex flex-col justify-start items-start'>
+                  <img src="./images/Lei.jpg" className=' contain'/>
+                  <p className=' absolute bottom-0 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Lei Zhiqin, 26, receives her bachelor’s and master’s degree in architecture from Tsinghua University, China, and plans to establish a design studio in Hong Kong in the future. (Picture provided by Lei Zhiqin)</p>
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                <div className=' relative w-full flex flex-col justify-start items-start'>
+                  <img src="./images/Li.jpg" className=' contain'/>
+                  <p className=' absolute bottom-0 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Li Yuehan, 23, a graduate from Fudan University, China, is currently pursuing a master's degree oversea with no plans to in the coming year. (Picture provided by Li Yuehan)</p>
+                </div>
+              </SplideSlide>
+            </Splide>
+          </div>
+        </div>
+
         <p>Zheng Jia, 24, a fresh graduate of Monash University, applied for TTPS Category C and received her notification of approval in early June this year.</p>
         <p>The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme, uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong. However, TTPS only requires a degree from a top 100 university,</p>
-
-        <div className=' w-full h-[70vh] mb-10 flex flex-col justify-center items-center'>
-          <img src='./images/ZhengResult.jpg' className=' contain' />
-          <p className=' text-lg text-center'>Zeng receives the approval result of TTPS Category C from the Immigration Department in early June. (Picture provided by Zeng Jia)</p>
-        </div>
 
         <p>Li Yuehan, 23, a Category C applicant who got her bachelor’s degree from Fudan University, agreed the TPPS has opened up a path for eligible students from different disciplines to easily enter the Hong Kong labor market without having to find a job.</p>
         <p>"As a Category C applicant, I am only required to submission graduation certificates, transcripts, Exit-Entry Permit for Travelling to and from Hong Kong and Macao (EEP), and other personal information and documents," said Lei Zhiqin, a 26-year-old architect who graduated from Tsinghua University who got her TTPS Visa in September."</p>
@@ -173,15 +226,18 @@ function App() {
         <p>Kong said that there is no need to make extensive changes to TTPS now as there is a continued need for continuity and the government should avoid any disruptions caused by the changes before the results can be seen, while there is need the government to conduct a transparent review of the effectiveness of the programme in the next one to two years.</p>
         <p>Kong reiterated the programme did not cater to Mainlanders only but was comprehensively geared towards global talents.</p>
         <p>“With foreign chambers of commerce re-launching their local operations, we expect to see more young, educated, and experienced applicants from all over the world for our programme in the coming years,” added Kong.</p>
-        <div className=' w-full h-[70vh] mt-10 flex flex-col justify-center items-center'>
-          <img src='./images/TTPSChart.png' className=' contain' />
-          <p className=' text-lg text-center'>Hong Kong's labour force edges up 1.7% in the third quarter of 2023 compared with the first quarter of 2022, which the first quarter after the introduction of TTPS application.</p>
-        </div>
       </div>
 
-      <div className=' mb-[200px]' />
-
-      <Sector1 width={screenWidth} height={20} top={0} scrollRate={15} scrollY={scrollY} title='HKBU News' contents={[ 'Fanny', 'Joyce', 'Jacky', 'Vincent']} />
+      <div className='w-full h-[10vh] relative mt-[20vh]'>
+        <div className="bg-fixed w-full h-full bg-cover absolute opacity-30 -z-50"
+          style={{
+            backgroundImage: 'url(./images/newspaper.jpeg)'
+          }}
+        />
+      </div>
+      <div className=' w-full h-[30vh] bg-zinc-900 flex justify-center items-center text-white font-mono'> 
+          <p>End of Reading</p>
+      </div>
 
     </div>
   );
