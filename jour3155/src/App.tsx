@@ -132,7 +132,7 @@ function App() {
         
         <p>As of Oct. 31, 2023, the number of successful applications for the TTPS reached 43,068 out of 54,772 cases, accounting for 37.2% of the total number of all talent schemes’ approvals, with 94.5% of approved applicants from Mainland China. </p>
         <p>Category A, B, and C applications each accounted for 22.6%, 54.5%, and 22.8% of the approved applications, respectively, according to the Labour and Welfare Bureau. </p>
-        <p>The more relaxed eligibility criteria for Category C have attracted many applicants of Chinese nationality who obtained their bachelor’s degree from the world’s top 100 universities with less than three years of work experience.</p>
+        <p>The more relaxed eligibility criteria for Category C has attracted many applicants of Chinese nationality who obtained their bachelor’s degree from the world’s top 100 universities with less than three years of work experience.</p>
         <p>After the launch of TTPS last year, the labor force edged up 1.7% which returned to 3.83 million as of September 2023, according to the Census and Statistics Department.</p>
         
         <div className=' w-full h-fit flex flex-col lg:flex-row justify-start items-start gap-2'>
