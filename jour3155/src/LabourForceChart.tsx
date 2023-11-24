@@ -99,8 +99,41 @@ const data = [
   },
 ];
 
+const CustomTooltip: FunctionComponent<any> = (props: any) => {
+
+  const { active, payload, label } = props;
+
+  if (active && payload && payload.length) {
+    return (
+      <div className=" flex flex-col justify-start items-starts rounded-md bg-[#ffffffb7] p-1">
+
+          <p className=" font-bold">{label}</p>
+
+          {
+              payload.map((pld: any) => (
+                  <div className=" flex justify-start items-center gap-5"
+                    style={{
+                      color: pld.color
+                    }}>
+                      <div>
+                        {pld.dataKey}
+                      </div>
+                      <div>{pld.value < 0 ? pld.value * -1 : pld.value}</div>
+                  </div>
+              ))
+          }
+      </div>
+    );
+  }
+
+  return null;
+};
+
 const DataFormater = (number: number) => {
-  return (number/1000000).toString() + 'M';
+  let num = number;
+  if (num < 0)
+    num = num * -1;
+  return (num/1000000).toString() + 'M';
   // if(number > 1000000000){
   //   return (number/1000000000).toString() + 'B';
   // }else if(number > 1000000){
@@ -138,20 +171,20 @@ export function LabourForce(props: {width: number}) {
     <BarChart
       width={props.width}
       barCategoryGap={props.width > 768 ? 10 : 18}
-      height={300}
+      height={600}
       data={data}
       stackOffset="sign"
       margin={{
         top: 10,
         right: 0,
         left: 20,
-        bottom: 0
+        bottom: 20
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" tick={<CustomizedAxisTick />} interval={props.width > 768 ? 0 : 1} />
       <YAxis tickFormatter={DataFormater} domain={[-3000000, 3000000]} tickCount={10} interval={1} fontSize={20} />
-      <Tooltip />
+      <Tooltip content={<CustomTooltip />}  />
       <Legend />
       <ReferenceLine y={0} stroke="#000" />
       <Bar dataKey="Male" fill="#7A87D4" stackId="stack" />
