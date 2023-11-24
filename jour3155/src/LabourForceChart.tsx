@@ -180,7 +180,7 @@ export function LabourForce(props: {width: number}) {
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" tick={<CustomizedAxisTick />} interval={props.width > 768 ? 0 : 1} />
-      <YAxis tickFormatter={DataFormater} domain={[0, 5000000]} tickCount={15} interval={1} fontSize={20} />
+      <YAxis tickFormatter={DataFormater} domain={[0, 4800000]} tickCount={15} interval={1} fontSize={20} />
       <Tooltip content={<CustomTooltip />}  />
       <Legend wrapperStyle={{paddingTop: 25}} />
       <ReferenceLine y={0} stroke="#000" />

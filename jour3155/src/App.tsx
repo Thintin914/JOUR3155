@@ -119,7 +119,7 @@ function App() {
             style={{
               lineHeight: '1.5rem'
             }}>
-            2019 Q1 - 2023 Q3 Hong Kong's Labour Force
+            Hong Kong's Labour Force Quarterly (2019 Q1 - 2023 Q3)
           </p>
           <LabourForce width={screenWidth > 768 ? screenWidth - screenWidth * 0.25 : screenWidth - screenWidth * 0.1} />
           <p className='text-lg text-center'>Hong Kong's labour force edges up 1.7% in the third quarter of 2023 compared with the first quarter of 2022, which the first quarter after the introduction of TTPS application.</p>
