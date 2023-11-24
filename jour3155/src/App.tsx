@@ -53,12 +53,12 @@ function App() {
         <CanvasBlock id='gl1' canvasH={1000} canvasW={1000} />
       </div>
 
-      <div className=' fixed right-0 -z-50'
+      {/* <div className=' fixed right-0 -z-50'
         style={{
           display: screenWidth < 768 ? 'none' : 'block'
         }}>
         <img src='./images/ink.png' className=' contain' />
-      </div>
+      </div> */}
 
       <div className=' relative w-full h-[20vh] flex flex-col justify-center items-center font-sans'>
 
@@ -77,7 +77,7 @@ function App() {
         />
       </div>
 
-      <div className=' flex flex-col justify-start items-start mt-5 ml-12 mr-12 md:mr-[300px] gap-8 text-2xl font-thin'
+      <div className=' flex flex-col justify-center items-center mt-5 ml-12 mr-12 lg:ml-[200px] lg:mr-[200px] gap-8 text-2xl font-thin'
         style={{
           lineHeight: '2.5rem'
         }}>
