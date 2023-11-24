@@ -5,97 +5,97 @@ const data = [
   {
     name: '2019 Q1',
     Female: 1990800,
-    Male: 1994700,
+    Male: -1994700,
   },
   {
     name: '2019 Q2',
     Female: 2003800,
-    Male: 1990100,
+    Male: -1990100,
   },
   {
     name: '2019 Q3',
     Female: 2005700,
-    Male: 1983400,
+    Male: -1983400,
   },
   {
     name: '2019 Q4',
     Female: 1985600,
-    Male: 1986200,
+    Male: -1986200,
   },
   {
     name: '2020 Q1',
     Female: 1973400,
-    Male: 1947400,
+    Male: -1947400,
   },
   {
     name: '2020 Q2',
     Female: 1967800,
-    Male: 1937100,
+    Male: -1937100,
   },
   {
     name: '2020 Q3',
     Female: 1954800,
-    Male: 1950100,
+    Male: -1950100,
   },
   {
     name: '2020 Q4',
     Female: 1949300,
-    Male: 1953500,
+    Male: -1953500,
   },
   {
     name: '2021 Q1',
     Female: 1955700,
-    Male: 1932800,
+    Male: -1932800,
   },
   {
     name: '2021 Q2',
     Female: 1962000,
-    Male: 1923600,
+    Male: -1923600,
   },
   {
     name: '2021 Q3',
     Female: 1949800,
-    Male: 1924200,
+    Male: -1924200,
   },
   {
     name: '2021 Q4',
     Female: 1935400,
-    Male: 1915500,
+    Male: -1915500,
   },
   {
     name: '2022 Q1',
     Female: 1908600,
-    Male: 1884900,
+    Male: -1884900,
   },
   {
     name: '2022 Q2',
     Female: 1873700,
-    Male: 1880600,
+    Male: -1880600,
   },
   {
     name: '2022 Q3',
     Female: 1906100,
-    Male: 1902000,
+    Male: -1902000,
   },
   {
     name: '2022 Q4',
     Female: 1933900,
-    Male: 1913400,
+    Male: -1913400,
   },
   {
     name: '2023 Q1',
     Female: 1899100,
-    Male: 1870100,
+    Male: -1870100,
   },
   {
     name: '2023 Q2',
     Female: 1913700,
-    Male: 1888700,
+    Male: -1888700,
   },
   {
     name: '2023 Q3',
     Female: 1929700,
-    Male: 1904600,
+    Male: -1904600,
   },
 ];
 
@@ -150,7 +150,7 @@ export function LabourForce(props: {width: number}) {
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" tick={<CustomizedAxisTick />} interval={props.width > 768 ? 0 : 1} />
-      <YAxis tickFormatter={DataFormater} domain={[0, 5000000]} tickCount={10} interval={1} fontSize={20} />
+      <YAxis tickFormatter={DataFormater} domain={[-3000000, 3000000]} tickCount={10} interval={1} fontSize={20} />
       <Tooltip />
       <Legend />
       <ReferenceLine y={0} stroke="#000" />
