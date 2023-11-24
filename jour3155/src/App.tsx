@@ -94,7 +94,7 @@ function App() {
           </div>
 
           <div className='w-full flex justify-center items-center'>
-            <img src='./images/cover.jpeg' className='contain'  />
+            <img src='./images/cover.jpg' className='contain'  />
           </div>
           <p className='text-lg text-center'>Causeway Bay, Hong Kong’s business district on the Friday’s afternoon, Nov. 17, 2023.</p>
         </div>
