@@ -113,7 +113,15 @@ function App() {
             our browser does not support the video tag.
           </video>
         </div>
+        
 
+        <p>TTPS is a new talent program introduced by the Hong Kong Government in the Policy Address 2022, to attract high-paid and well-qualified world talents to stay in Hong Kong, thereby strengthening the high-end labor force and enhancing competitiveness.</p>
+        <p>The government aims to attract high-net-value talents with Category A targets on experienced and high-income employees or entrepreneurs with an annual income reached HK$2.5 million in the year before application.</p>
+        <p>Category B and C applicants are required to hold a bachelor’s degree from the world’s top 100 universities. Category B applicants are required to have at least three years of working experience, while no working experience is required for Category C applicants, but it is subject to a quota limit and is available on a first-come-first-served basis.</p>
+        
+        <p>As of Oct. 31, 2023, the number of successful applications for the TTPS reached 43,068 out of 54,772 cases, accounting for 37.2% of the total number of all talent schemes’ approvals, with 94.5% of approved applicants from Mainland China. </p>
+        <p>Category A, B, and C applications each accounted for 22.6%, 54.5%, and 22.8% of the approved applications, respectively, according to the Labour and Welfare Bureau. </p>
+        
         <div className='w-full flex flex-col justify-start items-start bg-slate-50 p-1'>
           <p className='flex w-full justify-center items-center text-center font-semibold'
             style={{
@@ -125,13 +133,6 @@ function App() {
           <p className='text-lg text-center'>Hong Kong's labour force edges up 1.7% in the third quarter of 2023 compared with the first quarter of 2022, which the first quarter after the introduction of TTPS application.</p>
         </div>
         
-
-        <p>TTPS is a new talent program introduced by the Hong Kong Government in the Policy Address 2022, to attract high-paid and well-qualified world talents to stay in Hong Kong, thereby strengthening the high-end labor force and enhancing competitiveness.</p>
-        <p>The government aims to attract high-net-value talents with Category A targets on experienced and high-income employees or entrepreneurs with an annual income reached HK$2.5 million in the year before application.</p>
-        <p>Category B and C applicants are required to hold a bachelor’s degree from the world’s top 100 universities. Category B applicants are required to have at least three years of working experience, while no working experience is required for Category C applicants, but it is subject to a quota limit and is available on a first-come-first-served basis.</p>
-        
-        <p>As of Oct. 31, 2023, the number of successful applications for the TTPS reached 43,068 out of 54,772 cases, accounting for 37.2% of the total number of all talent schemes’ approvals, with 94.5% of approved applicants from Mainland China. </p>
-        <p>Category A, B, and C applications each accounted for 22.6%, 54.5%, and 22.8% of the approved applications, respectively, according to the Labour and Welfare Bureau. </p>
         <p>The more relaxed eligibility criteria for Category C has attracted many applicants of Chinese nationality who obtained their bachelor’s degree from the world’s top 100 universities with less than three years of work experience.</p>
         <p>After the launch of TTPS last year, the labor force edged up 1.7% which returned to 3.83 million as of September 2023, according to the Census and Statistics Department.</p>
         
