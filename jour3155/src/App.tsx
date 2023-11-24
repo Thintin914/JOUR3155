@@ -142,8 +142,9 @@ function App() {
               style={{
                 lineHeight: '1.5rem'
               }}>
-              TTPS Category Disturbution of Application as of Oct. 31, 2023
+              TTPS Category Disturbution of Application
             </p>
+            <p className='flex w-full justify-center items-center text-center font-semibold'>as of Oct. 31, 2023</p>
             <TTPSPieChart width={screenWidth > 768 ? screenWidth - screenWidth * 0.12 : screenWidth - screenWidth * 0.05}  />
             <p className='text-lg text-center min-h-[10vh]'>The number of Category B applicants, graduates from the world’s top 100 university with at least three years of work experience, ranks top among three categories under TTPS.  </p>
           </div>
@@ -153,8 +154,9 @@ function App() {
               style={{
                 lineHeight: '1.5rem'
               }}>
-              TTPS Country Disturbution of Approved Cases as of Oct. 31, 2023
+              TTPS Country Disturbution of Approved Cases
             </p>
+            <p className='flex w-full justify-center items-center text-center font-semibold'>as of Oct. 31, 2023</p>
             <TTPSCountryCaseChart width={screenWidth > 768 ? screenWidth - screenWidth * 0.12 : screenWidth - screenWidth * 0.05}  />
             <p className='text-lg text-center min-h-[10vh]'>TTPS applicants from China counts for most of the approved cases.</p>
           </div>
@@ -211,7 +213,7 @@ function App() {
         <p>Li also believed that Hong Kong's financial industry still enjoys an edge, which encouraged some of her classmates majoring in finance to apply for TTPS to enter Hong Kong and seek job opportunities.</p>
         <p>“Besides more job opportunities, there is more room for business development in Hong Kong, and the lower tax rate helps start a company as I want to establish my studio in Hong Kong as well,” said Lei.</p>
         <p>Under the low tax rate practice in Hong Kong, corporations with annual profits not exceeding HK$2 million are required to pay profits tax at 8.25%, while those with annual profits exceeding HK$2 million are required to pay profits tax at 16.5%.</p>
-        <p>Applicants’ legal spouses and unmarried dependent children under 18 are allowed to enter Hong Kong under TTPS, some of the applicants in Category A and B that she knew, value the Hong Kong education system, which planned to bring their children to study here, Lei added.</p>
+        <p>Applicants’ legal spouses and unmarried dependent children under 18 are allowed to enter Hong Kong under TTPS, some of the applicants in Category A and B that she knew, value the Hong Kong education system and wish to bring their children to study here, Lei added.</p>
         <p>“I fancy Hong Kong's economic development, welfare, and education,” said Ren, “Compared with other countries, I feel that Hong Kong's cultural background and location advantage of easy access to mainland China are more suitable for our family.”</p>
         <p>The government introduced a stamp duty refund mechanism for TTPS individuals who are eligible for exemption of buyer's stamp duty (BSD) and ad valorem stamp duty (AVD) to attract talents to settle in Hong Kong.</p>
         <p>Zeng, Li, Lei, and Ren said the existing complementary policies of the government are unable to attract talents of TTPS to settle in Hong Kong.</p>
