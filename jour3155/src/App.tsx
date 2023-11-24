@@ -200,7 +200,7 @@ function App() {
         </div>
 
         <p>Zheng Jia, 24, a fresh graduate of Monash University, applied for TTPS Category C and received her notification of approval in early June this year.</p>
-        <p>“The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme (QMAS), uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong,” said Zheng. “However, TTPS only requires a degree from a top 100 university.”</p>
+        <p>“The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme (QMAS), uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong,” said Zheng. “However, TTPS only requires a degree from world's top 100 universities.”</p>
 
         <p>Li Yuehan, 23, a Category C applicant who got her bachelor’s degree from Fudan University, agreed the TTPS has opened up a path for eligible students from different disciplines to easily enter the Hong Kong labor market without having to find a job.</p>
         <p>“As a Category C applicant, I am only required to submission graduation certificates, transcripts, Exit-Entry Permit for Travelling to and from Hong Kong and Macao (EEP), and other personal information and documents,” said Lei Zhiqin, a 26-year-old architect who graduated from Tsinghua University who got her TTPS Visa in September.</p>
