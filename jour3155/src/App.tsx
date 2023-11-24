@@ -101,17 +101,19 @@ function App() {
 
         <p>The Hong Kong government opened the applications for the Top Talent Pass Scheme (SPSS) in December 2022, William Wong, the director of iN and iN Management Limited, expected that the programme would be able to relax the talent shortage in the IT industry, whilst the result has not been as he expected.</p>
         <p>Wong’s company has seen a rise of about 10% in the number of applicants in the past six months most of whom are mainlanders who came to Hong Kong through the TPPS.</p>
-        <p>We do get a lot of applications from people who have TTPS visas, and we have hired a lot of them, but they don't stay in their jobs or Hong Kong for long,</p>
+        <p>“We do get a lot of applications from people who have TTPS visas, and we have hired a lot of them, but they don't stay in their jobs or Hong Kong for long,” said Wong. </p>
         <p>Wong believed the company was now competitive enough to take on more commercial projects by hiring non-local talents, but the effectiveness of bridging the talent gap, in the long run, had yet to be ascertained. </p>
+        <p>“The quality of the applicants is quite varying sometimes because there is a requirement gap between Category A, B, and C,” said Wong. “We hope the government will carefully screen the applications and follow up the post-approval situation of the applicants to ensure the effective admission of talents.”</p>
         <p>The Legislative Council member, Kong Yuk-foon, stated the decision of TTPS applicants to stay in Hong Kong or not would affect the effectiveness of the programme and local employment, and the government should review whether the number of people coming to work in Hong Kong and their occupations could meet the Government's expectation after the programme had been implemented for one to two years.</p>
-        <p>The local labor force has dropped 5.3% from 3.99 million in 2019 to 3.77 million in 2022, hitting a new low since the immigration wave and the COVID-19 pandemic, according to the Census and Statistics Department.</p>
-      
+
         <div className='w-full flex justify-center items-center'>
           <video className='w-full' controls>
             <source src="./images/video.mp4" type="video/mp4"/>
             our browser does not support the video tag.
           </video>
         </div>
+
+        <p>The local labor force has dropped 5.3% from 3.99 million in 2019 to 3.77 million in 2022, hitting a new low since the immigration wave and the COVID-19 pandemic, according to the Census and Statistics Department.</p>
 
         <div className='w-full flex flex-col justify-start items-start bg-slate-50 p-1'>
           <p className='flex w-full justify-center items-center text-center font-semibold'
@@ -132,7 +134,7 @@ function App() {
         <p>As of Oct. 31, 2023, the number of successful applications for the TTPS reached 43,068 out of 54,772 cases, accounting for 37.2% of the total number of all talent schemes’ approvals, with 94.5% of approved applicants from Mainland China. </p>
         <p>Category A, B, and C applications each accounted for 22.6%, 54.5%, and 22.8% of the approved applications, respectively, according to the Labour and Welfare Bureau. </p>
         <p>The more relaxed eligibility criteria for Category C have attracted many applicants of Chinese nationality who obtained their bachelor’s degree from the world’s top 100 universities with less than three years of work experience.</p>
-        <p>After the launch of TTPS last year, the labor force edged up 1.7% that returned to 3.83 million as of September 2023, according to the Census and Statistics Department.</p>
+        <p>After the launch of TTPS last year, the labor force edged up 1.7% which returned to 3.83 million as of September 2023, according to the Census and Statistics Department.</p>
         
         <div className=' w-full h-fit flex flex-col lg:flex-row justify-start items-start gap-2'>
 
@@ -141,7 +143,7 @@ function App() {
               style={{
                 lineHeight: '1.5rem'
               }}>
-              TTPS Category Disturbution of Application as of Oct. 12, 2023
+              TTPS Category Disturbution of Application as of Oct. 31, 2023
             </p>
             <TTPSPieChart width={screenWidth > 768 ? screenWidth - screenWidth * 0.12 : screenWidth - screenWidth * 0.05}  />
             <p className='text-lg text-center min-h-[10vh]'>The number of Category B applicants, graduates from the world’s top 100 university with at least three years of work experience, ranks top among three categories under TTPS.  </p>
@@ -160,8 +162,6 @@ function App() {
 
         </div>
         
-
-
         <p>As the programme has no mandatory requirement for applicants to work in Hong Kong, some applicants admitted that they had no intention to come to Hong Kong recently as they applied for TTPS just to "give it a try" and leave more options for their future career development.</p>
 
         <div className=' w-full flex justify-center items-center'>
@@ -201,17 +201,16 @@ function App() {
         </div>
 
         <p>Zheng Jia, 24, a fresh graduate of Monash University, applied for TTPS Category C and received her notification of approval in early June this year.</p>
-        <p>The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme, uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong. However, TTPS only requires a degree from a top 100 university,</p>
+        <p>“The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme (QMAS), uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong,” said Zheng. “However, TTPS only requires a degree from a top 100 university.”</p>
 
         <p>Li Yuehan, 23, a Category C applicant who got her bachelor’s degree from Fudan University, agreed the TPPS has opened up a path for eligible students from different disciplines to easily enter the Hong Kong labor market without having to find a job.</p>
-        <p>"As a Category C applicant, I am only required to submission graduation certificates, transcripts, Exit-Entry Permit for Travelling to and from Hong Kong and Macao (EEP), and other personal information and documents," said Lei Zhiqin, a 26-year-old architect who graduated from Tsinghua University who got her TTPS Visa in September."</p>
+        <p>“As a Category C applicant, I am only required to submission graduation certificates, transcripts, Exit-Entry Permit for Travelling to and from Hong Kong and Macao (EEP), and other personal information and documents,” said Lei Zhiqin, a 26-year-old architect who graduated from Tsinghua University who got her TTPS Visa in September.</p>
         <p>Ren Jieting, 37, a category A applicant who lives with his wife and 10-year-old child in Beijing, agreed that the application procedure compared to another talent scheme as he spent less than a month walking through the whole process.</p>
         <p>Processing time of application for a visa permit under TTPS takes four weeks after the submission of all required documents, according to the Immigration Department, whilst applicants have had their successful applications adjudicated within one to three weeks.</p>
-        <p>"The quality of the applicants is quite varying sometimes because there is a requirement gap between Category A, B, and C,” said Wong. “We hope the government will carefully screen the applications and follow up the post-approval situation of the applicants to ensure the effective admission of talents.”</p>
         <p>As the economic downturn in mainland China, Category C applicants are mostly fresh graduates with less working experience who favor Hong Kong as a city with stable economic development and a broader platform for job search.</p>
         <p>Zeng stated the financial industry is currently under suppression in mainland China, and coupled with the deterioration of the China economy, she sees Hong Kong with more job opportunities, which pushed her to apply to TTPS.</p>
         <p>Li also believed that Hong Kong's financial industry still enjoys an edge, which encouraged some of her classmates majoring in finance to apply for TPPS to enter Hong Kong and seek job opportunities.</p>
-        <p>Besides more job opportunities, there is more room for business development in Hong Kong, and the lower tax rate helps start a company as I want to establish my studio in Hong Kong as well,</p>
+        <p>“Besides more job opportunities, there is more room for business development in Hong Kong, and the lower tax rate helps start a company as I want to establish my studio in Hong Kong as well,” said Lei.</p>
         <p>Under the low tax rate practice in Hong Kong, corporations with annual profits not exceeding HK$2 million are required to pay profits tax at 8.25%, while those with annual profits exceeding HK$2 million are required to pay profits tax at 16.5%.</p>
         <p>Applicants’ legal spouses and unmarried dependent children under 18 are allowed to enter Hong Kong under TTPS, some of the applicants in Category A and B that she knew, value the Hong Kong education system, which planned to bring their children to study here, Lei added.</p>
         <p>“I fancy Hong Kong's economic development, welfare, and education,” said Ren, “Compared with other countries, I feel that Hong Kong's cultural background and location advantage of easy access to mainland China are more suitable for our family.”</p>
@@ -220,8 +219,7 @@ function App() {
         <p>“The cost of living in Hong Kong is much higher than in mainland China. If the government does not have relevant policies to support talents coming to Hong Kong, likely, they will eventually return to mainland China after years,” added Zeng.</p>
         <p>Zeng suggested the government could set up employment support services for talents coming to Hong Kong through TTPS, such as cooperating with enterprises to provide employment opportunities, while Lei agreed if the government introduce preferential treatment to foreign investors to set up a business in Hong Kong would be attractive to potential talents.</p>
         <p>Given the limited social resources and unclear effectiveness of the TTPS, it is not appropriate for the government to introduce complementary measures and benefits to attract more applicants at this stage, said Kong.</p>
-        <p>Applicants for the TTPS should not only think about the welfare of Hong Kong as they have high academic qualifications and rich working experience, which means they should have the ability to live in Hong Kong,</p>
-        <p>Focusing on the difficulties encountered by TTPS applicants in finding jobs, Kong suggested that the government examine whether talents of certain job types and occupations are unsuitable for importation into Hong Kong in the future policy review, to better meet the demand of the local labour market. </p>
+        <p>Focusing on the difficulties encountered by TTPS applicants in finding jobs, Kong suggested that the government examine whether talents of certain job types and occupations are unsuitable for importation into Hong Kong in the future policy review, to better meet the demand of the local labour market.</p>
         <p>After a year the announcement of TTPS, the government released to expand the university network under TTPS by adding eight top-notch institutions to 184 institutions in total, including five overseas world-tier hospitality and leisure management universities or schools and three universities in mainland China that are listed in Project 985, which effect from this month in Policy Address 2023.</p>
         <p>Kong said that there is no need to make extensive changes to TTPS now as there is a continued need for continuity and the government should avoid any disruptions caused by the changes before the results can be seen, while there is need the government to conduct a transparent review of the effectiveness of the programme in the next one to two years.</p>
         <p>Kong reiterated the programme did not cater to Mainlanders only but was comprehensively geared towards global talents.</p>

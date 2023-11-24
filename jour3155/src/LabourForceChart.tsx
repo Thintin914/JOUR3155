@@ -100,6 +100,7 @@ const data = [
 ];
 
 const DataFormater = (number: number) => {
+  return (number/1000000).toString() + 'M';
   if(number > 1000000000){
     return (number/1000000000).toString() + 'B';
   }else if(number > 1000000){

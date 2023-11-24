@@ -56,9 +56,6 @@ const data = [
           outerRadius={outerRadius + 10}
           fill={fill}
         />
-        <text x={cx} y={cy} fontSize={50} dy={-80} textAnchor="middle" fill={fill}>
-          China
-        </text>
         <text x={cx} y={cy} fontSize={50} dy={-32} textAnchor="middle" fill={fill}>
           {payload.name}
         </text>
