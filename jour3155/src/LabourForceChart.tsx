@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine } from 'recharts';
 
 const data = [
   {
@@ -101,15 +101,15 @@ const data = [
 
 const DataFormater = (number: number) => {
   return (number/1000000).toString() + 'M';
-  if(number > 1000000000){
-    return (number/1000000000).toString() + 'B';
-  }else if(number > 1000000){
-    return (number/1000000).toString() + 'M';
-  }else if(number > 1000){
-    return (number/1000).toString() + 'K';
-  }else{
-    return number.toString();
-  }
+  // if(number > 1000000000){
+  //   return (number/1000000000).toString() + 'B';
+  // }else if(number > 1000000){
+  //   return (number/1000000).toString() + 'M';
+  // }else if(number > 1000){
+  //   return (number/1000).toString() + 'K';
+  // }else{
+  //   return number.toString();
+  // }
 }
 
 export const CustomizedAxisTick: FunctionComponent<any> = (props: any) => {
@@ -136,24 +136,26 @@ export function LabourForce(props: {width: number}) {
 
   return (
     <BarChart
-    width={props.width}
-    height={600}
-    barCategoryGap={props.width > 768 ? 10 : 18}
-    data={data}
-    margin={{
-      top: 10,
-      right: 0,
-      left: 20,
-      bottom: 0
-    }}
+      width={props.width}
+      barCategoryGap={props.width > 768 ? 10 : 18}
+      height={300}
+      data={data}
+      stackOffset="sign"
+      margin={{
+        top: 10,
+        right: 0,
+        left: 20,
+        bottom: 0
+      }}
     >
-      <CartesianGrid strokeDasharray="3 3"  />
-      <XAxis dataKey="name" tick={<CustomizedAxisTick />} interval={props.width > 768 ? 0 : 1}/>
-      <YAxis type='number' domain={[0, 2200000]} tickCount={10} interval={1} fontSize={20} tickFormatter={DataFormater}  />
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis />
       <Tooltip />
-      <Legend wrapperStyle={{paddingTop: 25}}/>
-      <Bar dataKey="Male" fill="#7A87D4"/>
-      <Bar dataKey="Female" fill="#D47ABB" />
+      <Legend />
+      <ReferenceLine y={0} stroke="#000" />
+      <Bar dataKey="pv" fill="#7A87D4" stackId="stack" />
+      <Bar dataKey="uv" fill="#D47ABB" stackId="stack" />
     </BarChart>
   );
 }
