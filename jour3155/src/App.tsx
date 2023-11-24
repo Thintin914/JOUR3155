@@ -86,11 +86,11 @@ function App() {
           style={{
             lineHeight: '1.8rem'
           }}>
-          <p className=' text-5xl font-bold'>Headline (TBC)</p>
+          <p className=' text-5xl font-bold mb-5'>Hong Kong's Top Talent Pass Scheme struggles to meet expectations in retaining talents</p>
 
           <div className=' w-full flex justify-between items-center'>
-            <p className=' text-gray-400'>Reported by Vincent Chan, Fanny Cheung, Joyce Chu, Jacky Wu</p>
-            <p className=' text-gray-400'>7 Nov, 2023</p>
+            <p className=' text-gray-400 mb-5'>Reported by Vincent Chan, Fanny Cheung, Joyce Chu, Jacky Wu</p>
+            <p className=' text-gray-400 mb-5'>7 Nov, 2023</p>
           </div>
 
           <div className='w-full flex justify-center items-center'>
@@ -107,7 +107,7 @@ function App() {
         <p>The local labor force has dropped 5.3% from 3.99 million in 2019 to 3.77 million in 2022, hitting a new low since the immigration wave and the COVID-19 pandemic, according to the Census and Statistics Department.</p>
       
         <div className='w-full flex justify-center items-center'>
-          <video className='w-full lg:w-1/2 aspect-video' controls>
+          <video className='w-full' controls>
             <source src="./images/video.mp4" type="video/mp4"/>
             our browser does not support the video tag.
           </video>
@@ -181,19 +181,19 @@ function App() {
               <SplideSlide>
                 <div className=' relative w-full flex flex-col justify-start items-start'>
                   <img src="./images/Zeng.jpg" className=' contain'/>
-                  <p className=' absolute bottom-0 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Zeng Jia, 24, a fresh graduate from Monash University, Australia, is currently working in mainland China. (Picture provided by Zeng Jia)</p>
+                  <p className=' absolute bottom-0 p-1 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Zeng Jia, 24, a fresh graduate from Monash University, Australia, is currently working in mainland China. (Picture provided by Zeng Jia)</p>
                 </div>
               </SplideSlide>
               <SplideSlide>
                 <div className=' relative w-full flex flex-col justify-start items-start'>
                   <img src="./images/Lei.jpg" className=' contain'/>
-                  <p className=' absolute bottom-0 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Lei Zhiqin, 26, receives her bachelor’s and master’s degree in architecture from Tsinghua University, China, and plans to establish a design studio in Hong Kong in the future. (Picture provided by Lei Zhiqin)</p>
+                  <p className=' absolute bottom-0 p-1 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Lei Zhiqin, 26, receives her bachelor’s and master’s degree in architecture from Tsinghua University, China, and plans to establish a design studio in Hong Kong in the future. (Picture provided by Lei Zhiqin)</p>
                 </div>
               </SplideSlide>
               <SplideSlide>
                 <div className=' relative w-full flex flex-col justify-start items-start'>
                   <img src="./images/Li.jpg" className=' contain'/>
-                  <p className=' absolute bottom-0 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Li Yuehan, 23, a graduate from Fudan University, China, is currently pursuing a master's degree oversea with no plans to in the coming year. (Picture provided by Li Yuehan)</p>
+                  <p className=' absolute bottom-0 p-1 w-full bg-zinc-900 bg-opacity-40 text-lg text-white'>TTPS Category C applicants, Li Yuehan, 23, a graduate from Fudan University, China, is currently pursuing a master's degree oversea with no plans to in the coming year. (Picture provided by Li Yuehan)</p>
                 </div>
               </SplideSlide>
             </Splide>
