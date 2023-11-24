@@ -105,6 +105,7 @@ function App() {
         <p>Wong believed the company was now competitive enough to take on more commercial projects by hiring non-local talents, but the effectiveness of bridging the talent gap, in the long run, had yet to be ascertained. </p>
         <p>“The quality of the applicants is quite varying sometimes because there is a requirement gap between Category A, B, and C,” said Wong. “We hope the government will carefully screen the applications and follow up the post-approval situation of the applicants to ensure the effective admission of talents.”</p>
         <p>The Legislative Council member, Kong Yuk-foon, stated the decision of TTPS applicants to stay in Hong Kong or not would affect the effectiveness of the programme and local employment, and the government should review whether the number of people coming to work in Hong Kong and their occupations could meet the Government's expectation after the programme had been implemented for one to two years.</p>
+        <p>The local labor force has dropped 5.3% from 3.99 million in 2019 to 3.77 million in 2022, hitting a new low since the immigration wave and the COVID-19 pandemic, according to the Census and Statistics Department.</p>
 
         <div className='w-full flex justify-center items-center'>
           <video className='w-full' controls>
@@ -112,8 +113,6 @@ function App() {
             our browser does not support the video tag.
           </video>
         </div>
-
-        <p>The local labor force has dropped 5.3% from 3.99 million in 2019 to 3.77 million in 2022, hitting a new low since the immigration wave and the COVID-19 pandemic, according to the Census and Statistics Department.</p>
 
         <div className='w-full flex flex-col justify-start items-start bg-slate-50 p-1'>
           <p className='flex w-full justify-center items-center text-center font-semibold'

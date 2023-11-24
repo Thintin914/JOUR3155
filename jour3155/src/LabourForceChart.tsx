@@ -149,13 +149,13 @@ export function LabourForce(props: {width: number}) {
       }}
     >
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
-      <YAxis />
+      <XAxis dataKey="name" tick={<CustomizedAxisTick />} interval={props.width > 768 ? 0 : 1} />
+      <YAxis tickFormatter={DataFormater} domain={[0, 5000000]} tickCount={10} interval={1} fontSize={20} />
       <Tooltip />
       <Legend />
       <ReferenceLine y={0} stroke="#000" />
-      <Bar dataKey="pv" fill="#7A87D4" stackId="stack" />
-      <Bar dataKey="uv" fill="#D47ABB" stackId="stack" />
+      <Bar dataKey="Male" fill="#7A87D4" stackId="stack" />
+      <Bar dataKey="Female" fill="#D47ABB" stackId="stack" />
     </BarChart>
   );
 }
