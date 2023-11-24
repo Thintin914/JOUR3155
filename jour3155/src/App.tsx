@@ -86,7 +86,7 @@ function App() {
           style={{
             lineHeight: '1.8rem'
           }}>
-          <p className=' text-5xl font-bold mb-5'>Hong Kong's Top Talent Pass Scheme struggles to meet expectations in retaining talents</p>
+          <p className=' text-5xl font-bold mb-5'>Is Hong Kong's Top Talent Pass Scheme able to meet expectations in retaining talents?</p>
 
           <div className=' w-full flex justify-between items-center'>
             <p className=' text-gray-400 mb-5'>Reported by Vincent Chan, Fanny Cheung, Joyce Chu, Jacky Wu</p>
@@ -165,6 +165,25 @@ function App() {
         
         <p>As the programme has no mandatory requirement for applicants to work in Hong Kong, some applicants admitted that they had no intention to come to Hong Kong recently as they applied for TTPS just to "give it a try" and leave more options for their future career development.</p>
 
+        <p>Zheng Jia, 24, a fresh graduate of Monash University, applied for TTPS Category C and received her notification of approval in early June this year.</p>
+        <p>“The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme (QMAS), uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong,” said Zheng. “However, TTPS only requires a degree from world's top 100 universities.”</p>
+
+        <p>Li Yuehan, 23, a Category C applicant who got her bachelor’s degree from Fudan University, agreed the TTPS has opened up a path for eligible students from different disciplines to easily enter the Hong Kong labor market without having to find a job.</p>
+        <p>“As a Category C applicant, I am only required to submission graduation certificates, transcripts, Exit-Entry Permit for Travelling to and from Hong Kong and Macao (EEP), and other personal information and documents,” said Lei Zhiqin, a 26-year-old architect who graduated from Tsinghua University who got her TTPS Visa in September.</p>
+        <p>Ren Jieting, 37, a category A applicant who lives with his wife and 10-year-old child in Beijing, agreed that the application procedure compared to another talent scheme as he spent less than a month walking through the whole process.</p>
+        <p>Processing time of application for a visa permit under TTPS takes four weeks after the submission of all required documents, according to the Immigration Department, whilst applicants have had their successful applications adjudicated within one to three weeks.</p>
+        <p>As the economic downturn in mainland China, Category C applicants are mostly fresh graduates with less working experience who favor Hong Kong as a city with stable economic development and a broader platform for job search.</p>
+        <p>Zeng stated the financial industry is currently under suppression in mainland China, and coupled with the deterioration of the China economy, she sees Hong Kong with more job opportunities, which pushed her to apply to TTPS.</p>
+        <p>Li also believed that Hong Kong's financial industry still enjoys an edge, which encouraged some of her classmates majoring in finance to apply for TTPS to enter Hong Kong and seek job opportunities.</p>
+        <p>“Besides more job opportunities, there is more room for business development in Hong Kong, and the lower tax rate helps start a company as I want to establish my studio in Hong Kong as well,” said Lei.</p>
+        <p>Under the low tax rate practice in Hong Kong, corporations with annual profits not exceeding HK$2 million are required to pay profits tax at 8.25%, while those with annual profits exceeding HK$2 million are required to pay profits tax at 16.5%.</p>
+        <p>Applicants’ legal spouses and unmarried dependent children under 18 are allowed to enter Hong Kong under TTPS, some of the applicants in Category A and B that she knew, value the Hong Kong education system and wish to bring their children to study here, Lei added.</p>
+        <p>“I fancy Hong Kong's economic development, welfare, and education,” said Ren, “Compared with other countries, I feel that Hong Kong's cultural background and location advantage of easy access to mainland China are more suitable for our family.”</p>
+        <p>The government introduced a stamp duty refund mechanism for TTPS individuals who are eligible for exemption of buyer's stamp duty (BSD) and ad valorem stamp duty (AVD) to attract talents to settle in Hong Kong.</p>
+        <p>Zeng, Li, Lei, and Ren said the existing complementary policies of the government are unable to attract talents of TTPS to settle in Hong Kong.</p>
+        <p>“The cost of living in Hong Kong is much higher than in mainland China. If the government does not have relevant policies to support talents coming to Hong Kong, likely, they will eventually return to mainland China after years,” added Zeng.</p>
+        <p>Zeng suggested the government could set up employment support services for talents coming to Hong Kong through TTPS, such as cooperating with enterprises to provide employment opportunities, while Lei agreed if the government introduce preferential treatment to foreign investors to set up a business in Hong Kong would be attractive to potential talents.</p>
+        
         <div className=' w-full flex justify-center items-center'>
           <div className='w-full lg:w-[70%] aspect-video'>
             <Splide
@@ -200,25 +219,7 @@ function App() {
             </Splide>
           </div>
         </div>
-
-        <p>Zheng Jia, 24, a fresh graduate of Monash University, applied for TTPS Category C and received her notification of approval in early June this year.</p>
-        <p>“The original mechanism for entry into Hong Kong, for example, the Quality Migrant Admission Scheme (QMAS), uses a points system. As a university graduate with no assets, I cannot gain enough points for entry into Hong Kong,” said Zheng. “However, TTPS only requires a degree from world's top 100 universities.”</p>
-
-        <p>Li Yuehan, 23, a Category C applicant who got her bachelor’s degree from Fudan University, agreed the TTPS has opened up a path for eligible students from different disciplines to easily enter the Hong Kong labor market without having to find a job.</p>
-        <p>“As a Category C applicant, I am only required to submission graduation certificates, transcripts, Exit-Entry Permit for Travelling to and from Hong Kong and Macao (EEP), and other personal information and documents,” said Lei Zhiqin, a 26-year-old architect who graduated from Tsinghua University who got her TTPS Visa in September.</p>
-        <p>Ren Jieting, 37, a category A applicant who lives with his wife and 10-year-old child in Beijing, agreed that the application procedure compared to another talent scheme as he spent less than a month walking through the whole process.</p>
-        <p>Processing time of application for a visa permit under TTPS takes four weeks after the submission of all required documents, according to the Immigration Department, whilst applicants have had their successful applications adjudicated within one to three weeks.</p>
-        <p>As the economic downturn in mainland China, Category C applicants are mostly fresh graduates with less working experience who favor Hong Kong as a city with stable economic development and a broader platform for job search.</p>
-        <p>Zeng stated the financial industry is currently under suppression in mainland China, and coupled with the deterioration of the China economy, she sees Hong Kong with more job opportunities, which pushed her to apply to TTPS.</p>
-        <p>Li also believed that Hong Kong's financial industry still enjoys an edge, which encouraged some of her classmates majoring in finance to apply for TTPS to enter Hong Kong and seek job opportunities.</p>
-        <p>“Besides more job opportunities, there is more room for business development in Hong Kong, and the lower tax rate helps start a company as I want to establish my studio in Hong Kong as well,” said Lei.</p>
-        <p>Under the low tax rate practice in Hong Kong, corporations with annual profits not exceeding HK$2 million are required to pay profits tax at 8.25%, while those with annual profits exceeding HK$2 million are required to pay profits tax at 16.5%.</p>
-        <p>Applicants’ legal spouses and unmarried dependent children under 18 are allowed to enter Hong Kong under TTPS, some of the applicants in Category A and B that she knew, value the Hong Kong education system and wish to bring their children to study here, Lei added.</p>
-        <p>“I fancy Hong Kong's economic development, welfare, and education,” said Ren, “Compared with other countries, I feel that Hong Kong's cultural background and location advantage of easy access to mainland China are more suitable for our family.”</p>
-        <p>The government introduced a stamp duty refund mechanism for TTPS individuals who are eligible for exemption of buyer's stamp duty (BSD) and ad valorem stamp duty (AVD) to attract talents to settle in Hong Kong.</p>
-        <p>Zeng, Li, Lei, and Ren said the existing complementary policies of the government are unable to attract talents of TTPS to settle in Hong Kong.</p>
-        <p>“The cost of living in Hong Kong is much higher than in mainland China. If the government does not have relevant policies to support talents coming to Hong Kong, likely, they will eventually return to mainland China after years,” added Zeng.</p>
-        <p>Zeng suggested the government could set up employment support services for talents coming to Hong Kong through TTPS, such as cooperating with enterprises to provide employment opportunities, while Lei agreed if the government introduce preferential treatment to foreign investors to set up a business in Hong Kong would be attractive to potential talents.</p>
+        
         <p>Given the limited social resources and unclear effectiveness of the TTPS, it is not appropriate for the government to introduce complementary measures and benefits to attract more applicants at this stage, said Kong.</p>
         <p>Focusing on the difficulties encountered by TTPS applicants in finding jobs, Kong suggested that the government examine whether talents of certain job types and occupations are unsuitable for importation into Hong Kong in the future policy review, to better meet the demand of the local labour market.</p>
         <p>After a year the announcement of TTPS, the government released to expand the university network under TTPS by adding eight top-notch institutions to 184 institutions in total, including five overseas world-tier hospitality and leisure management universities or schools and three universities in mainland China that are listed in Project 985, which effect from this month in Policy Address 2023.</p>
