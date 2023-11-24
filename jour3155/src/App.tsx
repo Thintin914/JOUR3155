@@ -86,9 +86,9 @@ function App() {
           style={{
             lineHeight: '1.8rem'
           }}>
-          <p className=' text-5xl font-bold mb-5'>Is Hong Kong's Top Talent Pass Scheme able to meet expectations in retaining talents?</p>
+          <p className=' text-3xl md:text-5xl font-bold mb-5'>Is Hong Kong's Top Talent Pass Scheme able to meet expectations in retaining talents?</p>
 
-          <div className=' w-full flex justify-between items-center'>
+          <div className=' w-full flex flex-col md:flex-row justify-between items-start'>
             <p className=' text-gray-400 mb-5'>Reported by Vincent Chan, Fanny Cheung, Joyce Chu, Jacky Wu</p>
             <p className=' text-gray-400 mb-5'>7 Nov, 2023</p>
           </div>
